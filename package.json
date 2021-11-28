@@ -1,0 +1,16 @@
+{
+  "name": "lakeoconeesinclairguideservices-email-cloud-function",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "functions-framework --target=helloWorld"
+  },
+  "author": "Chad McKee",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^2.0.0",
+    "@sendgrid/mail": "^7.6.0"
+  }
+}
