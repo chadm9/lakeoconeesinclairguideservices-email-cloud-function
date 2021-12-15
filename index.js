@@ -6,8 +6,8 @@ exports.sendEmail = (req, res) => {
     const body = JSON.parse(req.body)
 
     const msg = {
-        to: `${process.env.EMAIL_TO_ADDRESS}`, // Change to your recipient
-        from: `${process.env.EMAIL_FROM_ADDRESS}`, // Change to your verified sender
+        to: `${process.env.EMAIL_TO_ADDRESS}`,
+        from: `${process.env.EMAIL_FROM_ADDRESS}`,
         subject: `LakeOconeeSincliarGuidService Inquiry from ${body?.name}`,
         text: `Sender Name: ${body?.name}\nSender Email: ${body?.email}\nSender Message: ${body?.message}`,
     }
